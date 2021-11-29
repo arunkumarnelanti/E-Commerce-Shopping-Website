@@ -1,0 +1,207 @@
+<!--Homepage.html-->
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>SMart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+        
+        div {
+            padding: 5px;
+            width: 20%;
+            border: 2px solid lightgray;
+            border-radius: 5px;
+            margin: 5px;
+            background-color: lightgrey;
+            font-size: 15px;
+        }
+        
+        div:hover {
+            background-color: #111;
+            color: white;
+            border-color: silver;
+            border-radius: 10px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .type1 {
+            display: block;
+            margin: 0px auto;
+        }
+        
+        .type2 {
+            position: relative;
+            flex-wrap: wrap;
+        }
+        
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        nav {
+            background: black;
+            height: 80px;
+            width: 100%;
+        }
+        
+        label.logo {
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            float: right;
+            margin-right: 20px;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+        
+        nav ul li a {
+            color: white;
+            font-size: 17px;
+            border-radius: 3px;
+            padding: 7px 13px;
+            text-transform: uppercase;
+        }
+        
+        #con a:hover {
+            background-color: #9a9fa3;
+            transition: .5s;
+        }
+        
+        #logout a:hover {
+            background-color: red;
+            transition: .5s;
+        }
+        
+        .checkbtn {
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        
+        #check {
+            display: none;
+        }
+        
+        @media(max-width:952px) {
+            label.logo {
+                font-size: 30px;
+                padding-left: 50px;
+            }
+            nav ul li a {
+                font-size: 16px;
+            }
+        }
+        
+        @media(max-width:858px) {
+            .checkbtn {
+                display: block;
+            }
+            ul {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #2c3e50;
+                top: 80px;
+                left: 0;
+                text-align: center;
+                transition: all .5s;
+            }
+            nav ul li {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            nav ul li a {
+                font-size: 20px;
+            }
+            a:hover,
+            a.active {
+                background: none;
+                color: #0082e6;
+            }
+            #check: checked~ul {
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars "></i>
+        </label>
+        <label class="logo"><i class="fas fa-shopping-cart"></i><b> SMart</b> <i class="fab fa-sellcast"></i> </label>
+
+        <ul>
+            <li id="con"><a href="Feedback1.html"><i class="far fa-star"></i> Feedback</a></li>
+            <li id="con"><a href="contactus.html"><i class="fas fa-phone-alt"></i> Contact Us</a></li>
+            <li id="logout"><a href="index.html">Log out <i class="fas fa-sign-out-alt"></i></a></li>
+        </ul>
+    </nav><br><br><br><br>
+
+    <section>
+        <div class="type1">
+            <img src="buy.png" width="287" height="200" alt="Buy" class="type2">
+            <p>
+                <center><a href="Buy.html">Buy</a></center>
+            </p>
+        </div><br>
+    </section><br><br>
+
+    <section>
+        <div class="type1">
+            <img src="sell.png" width="287" height="200" alt="Sell" class="type2">
+            <p>
+                <center><a href="sell.html">Sell</a></center>
+            </p>
+        </div><br>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!--index.html-->
+<!--Loginpage-->
+
+<html lang="en">
+
+<head>
+    <title>Login page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--Font awsome CDN link for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1 id="cname"><i class="fas fa-shopping-cart"></i> SMart <i class="fab fa-sellcast"></i></h1>
+        <hr>
+        <hr><br>
+        <header>Login Form</header>
+        <form method="post" action="Homepage.html">
+            <div class="field email">
+                <div class="input-area">
+                    <input type="text" placeholder="Email Address">
+                    <i class="icon fas fa-envelope"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt">Email can't be empty</div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" placeholder="password">
+                    <i class="icon fas fa-lock"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt">Password can't be empty</div>
+            </div>
+            <div class="pass-link"><a href="forgotpass.html">Forgot password?</a></div>
+            <input type="submit" name="submit" value="Login">
+
+        </form>
+        <div class="signup-link">Not a member? <a href="Signup.html">Sign up</a></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!--pantry.html-->
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pantry</title>
+    <link rel="stylesheet" href="style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="script1.js"></script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+                <i class="fas fa-bars "></i>
+            </label>
+        <label class="logo"><i class="fas fa-shopping-cart"></i><b> SMart</b>  </label>
+
+        <ul>
+            <li id="con"><a href="Homepage.html"><i class="fas fa-home"></i> Home</a></li>
+            <li id="con"><a href="buy.html"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i> Previous</a></li>
+            <li id="con"><a href="contactus.html"><i class="fas fa-phone-alt"></i> Contact Us</a></li>
+            <li id="logout"><a href="index.html">Log out <i class="fas fa-sign-out-alt"></i></a></li>
+        </ul>
+    </nav><br><br>
+    <center>
+        <h2><b>Pantry</b></h2>
+    </center><br><br>
+
+    <hr>
+    <div class="shop-items">
+
+        <div class="shop-item">
+            <div>
+                <img class="shop-item-image" src="rice1.jpg">
+                <div class="product-name" style="text-decoration: none">
+                    <span class="shop-item-title">Fortune Sona Masoori Rice.</span>
+                </div>
+                <div class="align">
+                    <span class="deal">SMart Deal:</span>&nbsp;
+                    <span class="shop-item-price">249</span><br><br>
+                    <button class="btn btn-primary shop-item-button" type="button"><i class="fas fa-cart-plus"></i> ADD TO CART</button><br>
+                </div>
+            </div>
+
+            <div class="product-detail">
+                <div class="detail"><b>Product Details: </b></div><br>
+                <ul>
+                    <li>Brand: Fortune</li>
+                    <li>Rice Type: Sona Masori.</li>
+                    <li>Weight: 5Kgs.</li>
+                    <li>Rice with High Protein.</li>
+                    <li>This is a Vegetarian product.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="shop-item">
+            <div>
+                <img class="shop-item-image" src="pulses1.jpg">
+                <div class="product-name" style="text-decoration: none">
+                    <span class="shop-item-title">Natureland Organics Chana Whole.</span>
+                </div>
+                <div class="align">
+                    <span class="deal">SMart Deal:</span>&nbsp;
+                    <span class="shop-item-price">99</span><br><br>
+                    <button class="btn btn-primary shop-item-button" type="button"><i class="fas fa-cart-plus"></i> ADD TO CART</button><br>
+                </div>
+            </div>
+
+            <div class="product-detail">
+                <div class="detail"><b>Product Details: </b></div><br>
+                <ul>
+                    <li>Brand: Nature Land.</li>
+                    <li>Weight: 1KG. </li>
+                    <li>Organic Healthy Pulses. </li>
+                    <li>This is a Vegetarian product</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="container content-section">
+        <h2 class="section-header"><i class="fa fa-cart-arrow-down"></i> CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">₹0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button"><i class="fa fa-shopping-cart"></i> PURCHASE</button>
+    </section><br><br>
+
+    <a href="Buy.html" id="back"><i class="fas fa-long-arrow-alt-left"></i>Back</a><br><br>
+</body>
+
+</html>
